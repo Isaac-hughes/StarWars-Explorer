@@ -6,6 +6,11 @@ import {
   Link
 } from "react-router-dom";
 import Films from "./components/films"
+import People from "./components/people"
+import Starships from "./components/starships"
+import Planets from "./components/planets"
+import Vehicles from "./components/vehicles"
+import Species from "./components/species"
 import "./App.css";
 
 const App = () => {
@@ -71,12 +76,39 @@ const App = () => {
 };
 
 function Page() {
-  return <h2>Home</h2>;
+  return (
+    <div className="homeContent">
+      <div className="tileRow">
+        <div className="pageRedirectTile">
+          <Link to="/films">FILMS</Link>
+        </div>
+        <div className="pageRedirectTile">
+          <Link to="/people">PEOPLE</Link>
+        </div>
+      </div>
+      <div className="tileRow">
+        <div className="pageRedirectTile">
+          <Link to="/planets">PLANETS</Link>
+        </div>
+        <div className="pageRedirectTile">
+          <Link to="/species">SPECIES</Link>
+        </div>
+      </div>
+      <div className="tileRow">
+        <div className="pageRedirectTile">
+          <Link to="/starships">STARSHIPS</Link>
+        </div>
+        <div className="pageRedirectTile">
+          <Link to="/vehicles">VEHICLES</Link>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 function FilmsPage() {
   return (
-    <div>
+    <div className="pageContent">
       <h2>Films</h2>
       <Films />
     </div>
@@ -84,23 +116,48 @@ function FilmsPage() {
 }
 
 function PeoplePage() {
-  return <h2>People</h2>;
+  return (
+    <div className="pageContent">
+      <h2>People</h2>
+      <People />
+    </div>
+  );
 }
 
 function PlanetsPage() {
-  return <h2>Planets</h2>;
+  return (
+    <div className="pageContent">
+      <h2>Planets</h2>
+      <Planets />
+    </div>
+  );
 }
 
 function SpeciesPage() {
-  return <h2>Species</h2>;
+  return (
+    <div className="pageContent">
+      <h2>Species</h2>
+      <Species />
+    </div>
+  );
 }
 
 function StarshipsPage() {
-  return <h2>Starships</h2>;
+  return (
+    <div className="pageContent">
+      <h2>Starships</h2>
+      <Starships />
+    </div>
+  );
 }
 
 function VehiclesPage() {
-  return <h2>Vehicles</h2>;
+  return (
+    <div className="pageContent">
+      <h2>Vehicles</h2>
+      <Vehicles />
+    </div>
+  );
 }
 
 

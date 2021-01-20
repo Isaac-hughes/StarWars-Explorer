@@ -3,21 +3,120 @@
   margin: 0;
 }
 
+@font-face{
+  font-family: 'Star Jedi';
+  src: url(./StarJedi-DGRW.ttf) format('truetype');
+}
+
 body {
   width: 100vw;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  background-image: url(./assets/star-wars-background.jpg);
+  color: #FFE81F;
+  font-family: 'Star Jedi', arial;
 }
 
 nav {
   width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 80%;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   list-style-type: none;
+  /* margin: 20px; */
+  font-size: 1.5rem;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.homeContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.tileRow {
+  width: 95%;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -4px;
+  font-style: italic;
+}
+
+.pageRedirectTile {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px #FFE81F solid;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.pageContent {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageContent h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -4px;
+  font-style: italic;
+}
+
+.linkContent {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tileContent {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.tileContent h1 {
+  font-style: italic;
+}
+
+.homeContent {
+  width: 100%;
+}
+
+.homeContent p {
+  padding: 4px;
+  line-height: 1.5rem;
+}

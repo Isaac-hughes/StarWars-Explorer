@@ -28,16 +28,16 @@ const Films = () => {
         return <div>Loading...</div>;
     } else {
         return (
-            <div>
+            <div className="linkContent">
                 {items.results && items.results.map((item, index) => {
                 return (
-                    <div>
+                    <div className="tileContent">
                         <h1 key={index}>{item.title}</h1>
                         <div className="content">
                             <p>Producer: {item.producer}</p>
                             <p>Release Date: {item.release_date}</p>
-                            <p>Opening Crawl: {item.opening_crawl}</p>
                             <p>Episode ID: {item.episode_id}</p>
+                            <p>Opening Crawl: {item.opening_crawl}</p>
                         </div>
                     </div>
                 )})}

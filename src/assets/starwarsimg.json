@@ -1,0 +1,25 @@
+{
+    "films": {
+       "4": "./starwars-pics/aNewHope.jpg",
+       "5": "./starwars-pics/theEmpireStrikesBack.jpg",
+       "6": "./starwars-pics/returnOfTheJedi.jpg",
+       "1": "./starwars-pics/thePhantomMenace.jpg",
+       "2": "./starwars-pics/attackOfTheClones.jpg",
+       "3": "./starwars-pics/revengeOfTheSith.jpg"
+    },
+    "people": {
+
+    },
+    "planets": {
+
+    },
+    "species": {
+
+    },
+    "starships": {
+
+    },
+    "vehicles": {
+
+    }
+}

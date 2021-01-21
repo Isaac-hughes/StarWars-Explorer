@@ -1,9 +1,23 @@
 import React, { useState, useEffect } from "react";
+import data from "../assets/starwarsimg.json"
 
 const Films = () => {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
+    const [isLoadedImg, setIsLoadedImg] = useState(false);
     const [items, setItems] = useState([]);
+    const [imgItems, setImgItems] = useState([]);
+    const [imageURL, setImageURL] = useState(null)
+
+    const getImageLink = (idVal) => {
+        let arr = data.films
+        
+        console.log(arr[idVal])
+        return (
+            <img src={arr[idVal]}></img>
+        )
+    }
+
 
     useEffect(() => {
         fetch("https://swapi.dev/api/films/")
@@ -34,6 +48,8 @@ const Films = () => {
                     <div className="tileContent">
                         <h1 key={index}>{item.title}</h1>
                         <div className="content">
+                            {/* {getImageLink(item.episode_id)} */}
+                            <img src={"./assets/starwarsPics/ATAT.jpg"}></img>
                             <p>Producer: {item.producer}</p>
                             <p>Release Date: {item.release_date}</p>
                             <p>Episode ID: {item.episode_id}</p>

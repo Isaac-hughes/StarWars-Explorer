@@ -1,9 +1,17 @@
 import React, { useState, useEffect } from "react";
+import {data} from "../assets/starwarsimg"
 
 const Species = () => {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
+
+    const getImageLink = (idVal) => {
+        let arr = data.species
+        return (
+            <img src={arr[idVal].default}></img>
+        )
+    }
 
     useEffect(() => {
         fetch("https://swapi.dev/api/species/")
@@ -32,8 +40,9 @@ const Species = () => {
                 {items.results && items.results.map((item, index) => {
                 return (
                     <div className="tileContent">
-                        <h1 key={index}>{item.name}</h1>
+                        {getImageLink(item.name)}
                         <div className="content">
+                            <h1 key={index}>{item.name}</h1>
                             <p>Classification: {item.classification}</p>
                             <p>Average Lifespan: {item.average_lifespan} years</p>
                             <p>Designation: {item.designation}</p>

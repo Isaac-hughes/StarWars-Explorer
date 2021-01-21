@@ -1,9 +1,17 @@
 import React, { useState, useEffect } from "react";
+import {data} from "../assets/starwarsimg"
 
 const Vehicles = () => {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
+
+    const getImageLink = (idVal) => {
+        let arr = data.vehicles
+        return (
+            <img src={arr[idVal].default}></img>
+        )
+    }
 
     useEffect(() => {
         fetch("https://swapi.dev/api/vehicles/")
@@ -32,8 +40,9 @@ const Vehicles = () => {
                 {items.results && items.results.map((item, index) => {
                 return (
                     <div className="tileContent">
-                        <h1 key={index}>{item.name}</h1>
                         <div className="content">
+                            {getImageLink(item.name)}
+                            <h1 key={index}>{item.name}</h1>
                             <p>Model: {item.model}</p>
                             <p>Crew: {item.crew}</p>
                             <p>Max Speed: {item.max_atmosphering_speed}</p>

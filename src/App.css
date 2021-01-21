@@ -3,11 +3,6 @@
   margin: 0;
 }
 
-@font-face{
-  font-family: 'Star Jedi';
-  src: url(./StarJedi-DGRW.ttf) format('truetype');
-}
-
 body {
   width: 100vw;
   display: flex;
@@ -15,7 +10,7 @@ body {
   overflow-x: hidden;
   background-image: url(./assets/star-wars-background.jpg);
   color: #FFE81F;
-  font-family: 'Star Jedi', arial;
+  font-family: arial;
 }
 
 nav {
@@ -97,19 +92,24 @@ a {
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 20px;
 }
 
 .tileContent {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 45%;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
-  margin: 20px;
+  padding: 20px;
 }
 
 .tileContent h1 {
   font-style: italic;
+}
+
+.content{
+  padding: 20px;
 }
 
 .homeContent {
@@ -119,4 +119,8 @@ a {
 .homeContent p {
   padding: 4px;
   line-height: 1.5rem;
+}
+
+img {
+  height: 200px;
 }

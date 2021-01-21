@@ -11,11 +11,12 @@ body {
   background-image: url(./assets/star-wars-background.jpg);
   color: #FFE81F;
   font-family: arial;
+  text-align: justify;
 }
 
 nav {
   width: 100%;
-  height: 10vh;
+  min-height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,15 +43,16 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
   justify-content: center;
   align-items: center;
   margin: 0;
+  /* flex-wrap: wrap; */
 }
 
 .tileRow {
   width: 95%;
-  height: 25vh;
+  min-height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,24 +61,26 @@ a {
   font-weight: 900;
   letter-spacing: -4px;
   font-style: italic;
+  flex-wrap: wrap;
 }
 
 .pageRedirectTile {
-  width: 40%;
-  height: 100%;
+  width: 50%;
+  height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 5px #FFE81F solid;
   margin: 20px;
   border-radius: 15px;
+  min-width: 260px;
 }
 
 .pageContent {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -93,6 +97,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   margin: 20px;
+  overflow-x: hidden;
 }
 
 .tileContent {
@@ -100,7 +105,7 @@ a {
   flex-direction: row;
   width: 45%;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   padding: 20px;
 }
 
@@ -110,6 +115,7 @@ a {
 
 .content{
   padding: 20px;
+
 }
 
 .homeContent {
@@ -122,5 +128,18 @@ a {
 }
 
 img {
-  height: 200px;
+  max-height: 200px;
+  max-width: 90%;
+}
+
+@media (max-width: 800px){
+  .tileContent {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
 }

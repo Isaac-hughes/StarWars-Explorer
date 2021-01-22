@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/StarWars-Explorer/static/css/main.8b3b68da.chunk.css",
+    "main.css": "/StarWars-Explorer/static/css/main.de5d4299.chunk.css",
     "main.js": "/StarWars-Explorer/static/js/main.e382d912.chunk.js",
     "main.js.map": "/StarWars-Explorer/static/js/main.e382d912.chunk.js.map",
     "runtime-main.js": "/StarWars-Explorer/static/js/runtime-main.0d0d3bfa.js",
@@ -10,7 +10,7 @@
     "static/js/3.0029cc4f.chunk.js": "/StarWars-Explorer/static/js/3.0029cc4f.chunk.js",
     "static/js/3.0029cc4f.chunk.js.map": "/StarWars-Explorer/static/js/3.0029cc4f.chunk.js.map",
     "index.html": "/StarWars-Explorer/index.html",
-    "static/css/main.8b3b68da.chunk.css.map": "/StarWars-Explorer/static/css/main.8b3b68da.chunk.css.map",
+    "static/css/main.de5d4299.chunk.css.map": "/StarWars-Explorer/static/css/main.de5d4299.chunk.css.map",
     "static/js/2.329277a0.chunk.js.LICENSE.txt": "/StarWars-Explorer/static/js/2.329277a0.chunk.js.LICENSE.txt",
     "static/media/ATAT.png": "/StarWars-Explorer/static/media/ATAT.fdf51d8d.png",
     "static/media/Alderaan.jpg": "/StarWars-Explorer/static/media/Alderaan.b3872db0.jpg",
@@ -73,7 +73,7 @@
   "entrypoints": [
     "static/js/runtime-main.0d0d3bfa.js",
     "static/js/2.329277a0.chunk.js",
-    "static/css/main.8b3b68da.chunk.css",
+    "static/css/main.de5d4299.chunk.css",
     "static/js/main.e382d912.chunk.js"
   ]
 }
